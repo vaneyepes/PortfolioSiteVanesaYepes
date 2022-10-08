@@ -1,0 +1,80 @@
+
+/*
+Colors used:
+H1 Highlights (Dark gray): #7F7F7F;
+body text (Midle Gray): #AAB0BB;
+background (light Gray): #F5F5F5;
+Head mini banner (blue light gray): #C8D1DB;
+Red Highlights:#F0566A
+
+Font Size
+H1 40 pt
+Body Text 18 pt
+buttons / header mini banner 12 pt
+
+*/
+
+body {
+  background-color:#F5F5F5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #7F7F7F;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.25em;
+}
+h5 {
+	font-size: 0.8em;
+}
+
+/* custom logo sizing */
+#logo {
+  width: auto;
+  height: auto;
+}
+
+/* Image Reponsive sizing */
+img {
+  width: 100%;
+}
+
+/* Links */
+a {
+  color: #7F7F7F;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #F0566A;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #AAB0BB;
+}
+
+
+/* keep at the very end of the style doc*/
+.button {
+  display: inline-block;
+  background-color: #F5F5F5;
+  color: #7F7F7F; /* needed to override the default link color */
+  font-weight: 200;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #7F7F7F; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+ opacity: 0.8; /* Reduces the opacity of the button to 80% */
+ text-decoration: none;
+}
