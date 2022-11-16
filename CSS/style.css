@@ -6,6 +6,7 @@ body text (Midle Gray): #AAB0BB;
 background (light Gray): #F5F5F5;
 Head mini banner (blue light gray): #C8D1DB;
 Red Highlights:#F0566A
+header background #C8D1DB
 
 Font Size
 H1 40 pt
@@ -13,6 +14,24 @@ Body Text 18 pt
 buttons / header mini banner 12 pt
 
 */
+
+{
+ box-sizing: border-box;
+}
+
+header {
+
+  background-color: #FFFFFF;
+  padding: 10px 0;
+  margin: 10px;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+  align: center;
+}
+
+
 
 body {
   background-color:#F5F5F5;
@@ -23,10 +42,10 @@ body {
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 3.5em;
 }
 h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 h3 {
 	font-size: 1.5em;
@@ -39,15 +58,21 @@ h5 {
 }
 
 /* custom logo sizing */
-#logo {
+/* #logo {
   width: auto;
   height: auto;
+}*/
+.logo {
+    max-width: 250px;
+    padding: 10px 0;
+    margin: 10px 0;
 }
 
-/* Image Reponsive sizing */
+/* Image Reponsive sizing
 img {
   width: 100%;
 }
+*/
 
 /* Links */
 a {
@@ -62,6 +87,41 @@ a:active { /* selected link */
   color: #AAB0BB;
 }
 
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+    text-align: center;}
+#hero h2 {
+        text-align: center;}
+
+/* Layout styling */
+
+        nav > ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        nav > ul > li {
+  display: inline-block;
+        }
+        nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+       }
+
+nav>ul>li>a:hover {
+  color: #F0566A;
+  border-bottom: 3px solid #F0566A;
+}
 
 /* keep at the very end of the style doc*/
 .button {
